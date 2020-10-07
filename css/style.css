@@ -10,3 +10,25 @@ section {
 .row > div {
   min-height: 100px;
 }
+
+/* Header */
+
+
+
+  .navbar-brand > img {
+    max-width: 100%;
+  }
+
+/* Jumbotron */
+#jumbo {
+  background-image: url("../img/home.jpg");
+}
+
+  #jumbo .row div:first-child {
+    color: white;
+  }
+
+  #jumbo .row div:last-child {
+    background-color: white;
+    border-radius: 5px;
+  }
