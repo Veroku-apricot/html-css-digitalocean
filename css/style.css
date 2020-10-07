@@ -1,14 +1,19 @@
+/* General rules */
 * {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 section {
-  background-color: purple;
   min-height: 100px;
 }
 
-.row > div {
-  min-height: 100px;
+.grey {
+  background-color: rgb(243, 245, 249);
+}
+
+.blue {
+  background: rgb(0,42,120);
+  background: linear-gradient(0deg, rgba(0,42,120,1) 0%, rgba(0,69,194,1) 100%);
 }
 
 /* Header */
