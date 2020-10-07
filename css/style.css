@@ -37,3 +37,21 @@ section {
     background-color: white;
     border-radius: 5px;
   }
+
+/* Deploy and scale */
+#deploy .row a {
+  display: block;
+  color: grey;
+  border-left: 2px solid lightgrey;
+  padding: 5px;
+}
+
+/* Designed for developers */
+#carousel-example-generic {
+  background: linear-gradient(0deg, rgba(243, 245, 249, 1) 0%, rgba(243, 245, 249, 1) 100%);
+}
+
+/* Footer */
+footer {
+  background-color: rgb(3, 28, 78);
+}
