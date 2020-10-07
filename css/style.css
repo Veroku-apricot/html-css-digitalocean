@@ -1,0 +1,12 @@
+* {
+  border: 1px solid black;
+}
+
+section {
+  background-color: purple;
+  min-height: 100px;
+}
+
+.row > div {
+  min-height: 100px;
+}
