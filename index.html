@@ -6,7 +6,8 @@
     <title></title>
 
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> -->
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <!-- Latest compiled and minified JavaScript -->
@@ -17,7 +18,7 @@
 
   <body>
     <header>
-      <div class="container">
+      <div  id="header" class="container">
         <nav class="navbar navbar-default">
           <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -28,8 +29,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#"> logo
-                <!-- <img src="img/logo.png" alt="Logo">  -->
+              <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="Logo">
               </a>
             </div>
 
@@ -37,7 +38,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="glyphicon glyphicon-menu-down"></span></a>
                   <ul class="dropdown-menu">
                     <li><a href="#">Action</a></li>
                     <li><a href="#">Another action</a></li>
@@ -46,7 +47,7 @@
                 </li>
                 <li><a href="#">Customers</a></li>
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="glyphicon glyphicon-menu-down"></span></a>
                   <ul class="dropdown-menu">
                     <li><a href="#">Action</a></li>
                     <li><a href="#">Another action</a></li>
@@ -59,7 +60,7 @@
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">Docs</a></li>
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Support <span class="caret"></span></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Support <span class="glyphicon glyphicon-menu-down"></span></a>
                   <ul class="dropdown-menu">
                     <li><a href="#">Action</a></li>
                     <li><a href="#">Another action</a></li>
@@ -67,6 +68,7 @@
                   </ul>
                 </li>
                 <li><a href="#">Login</a></li>
+                <li><button type="button" class="btn btn-default">Sign Up</button></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
@@ -81,18 +83,19 @@
           <div class="row">
             <div class="col-xs-12 col-md-7 white">
               <h1>The simplest cloud platform for developers & teams</h1>
-              <p>We make it simple to launch in the cloud and scale up as you grow – with an intuitive control panel, predictable pricing, team accounts, and more.</p>
+              <p class="greytxt">Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastrucure easy for teams and businesses, wether you're running one virtual machine or ten thousand.</p>
 
             </div>
             <div class="col-xs-12 col-md-5 text-center">
-              <h3>Deploy your app in seconds. <br> Get started now. </h3>
+              <h3 class="bluetxt">Deploy your app in seconds.</h3>
+              <h3>Get started now.</h3>
               <div class="input-group">
-                <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-                <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-                <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-                <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
+                <input type="email" class="form-control" placeholder="Email" aria-describedby="basic-addon1">
+                <input type="text" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+                <button type="button" class="btn btn-primary btn-lg btn-block">Create your account</button>
+                <button type="button" class="btn btn-default btn-lg btn-block">Sign up with google</button>
               </div>
-              <p>By signing up you agree to the <a href="#">Terms of Service</a>.</p>
+              <p class="littletxt">By signing up you agree to the <a href="#">Terms of Service</a>.</p>
 
             </div>
           </div>
@@ -100,7 +103,7 @@
       </section>
 
       <!-- Partners -->
-      <section class="grey">
+      <section id="partners" class="grey">
         <div class="container">
           <div class="row">
             <div class="col-xs-12 text-center">
@@ -142,7 +145,7 @@
         <div class="container">
           <div class="row">
             <div class="col-xs-12 text-center">
-              <h2>Deploy and scale seamlessly</h2>
+              <h2 class="bluetxt">Deploy and scale seamlessly</h2>
               <p>Our optimized configuration process saves your team time when running and scaling distributed applications, AI & machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
 
             </div>
@@ -185,7 +188,7 @@
       <!-- Designed for developers -->
       <section class="grey text-center">
         <div class="container">
-          <h2>Designed for developers</h2>
+          <h2 class="bluetxt">Designed for developers</h2>
           <p>Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.</p>
           <div id="carousel-example-generic grey" class="carousel slide" data-ride="carousel">
 
@@ -224,7 +227,7 @@
         <div class="container">
           <div class="row">
             <div class="col-xs-12 text-center">
-              <h2>The features your business needs</h2>
+              <h2 class="bluetxt">The features your business needs</h2>
 
             </div>
           </div>
@@ -254,7 +257,7 @@
       </section>
 
       <!-- 12 Regions -->
-      <section class="blue white">
+      <section id="12r" class="blue white">
         <div class="container">
           <div class="row">
             <div class="col-xs-12 text-center">
@@ -267,32 +270,32 @@
               <ul class="list-group">
                 <li class="list-group-item">
                   <span>AMS2</span>
-                  <p>Amsterdam, Netherlands</p>
+                  <p class="greytxt">Amsterdam, Netherlands</p>
                   <a href="#">Test speed > </a>
                 </li>
                 <li class="list-group-item">
                   <span>AMS3</span>
-                  <p>Amsterdam, Netherlands</p>
+                  <p class="greytxt">Amsterdam, Netherlands</p>
                   <a href="#">Test speed > </a>
                 </li>
                 <li class="list-group-item">
                   <span>BLR1</span>
-                  <p>Bangalore, India</p>
+                  <p class="greytxt">Bangalore, India</p>
                   <a href="#">Test speed > </a>
                 </li>
                 <li class="list-group-item">
                   <span>FRA1</span>
-                  <p>Frankfurt, Germany</p>
+                  <p class="greytxt">Frankfurt, Germany</p>
                   <a href="#">Test speed > </a>
                 </li>
                 <li class="list-group-item">
                   <span>LON1</span>
-                  <p>London, UK</p>
+                  <p class="greytxt">London, UK</p>
                   <a href="#">Test speed > </a>
                 </li>
                 <li class="list-group-item">
                   <span>NYC1</span>
-                  <p>New York, USA</p>
+                  <p class="greytxt">New York, USA</p>
                   <a href="#">Test speed > </a>
                 </li>
               </ul>
@@ -301,32 +304,32 @@
               <ul class="list-group">
                 <li class="list-group-item">
                   <span>AMS2</span>
-                  <p>Amsterdam, Netherlands</p>
+                  <p class="greytxt">Amsterdam, Netherlands</p>
                   <a href="#">Test speed > </a>
                 </li>
                 <li class="list-group-item">
                   <span>AMS3</span>
-                  <p>Amsterdam, Netherlands</p>
+                  <p class="greytxt">Amsterdam, Netherlands</p>
                   <a href="#">Test speed > </a>
                 </li>
                 <li class="list-group-item">
                   <span>BLR1</span>
-                  <p>Bangalore, India</p>
+                  <p class="greytxt">Bangalore, India</p>
                   <a href="#">Test speed > </a>
                 </li>
                 <li class="list-group-item">
                   <span>FRA1</span>
-                  <p>Frankfurt, Germany</p>
+                  <p class="greytxt">Frankfurt, Germany</p>
                   <a href="#">Test speed > </a>
                 </li>
                 <li class="list-group-item">
                   <span>LON1</span>
-                  <p>London, UK</p>
+                  <p class="greytxt">London, UK</p>
                   <a href="#">Test speed > </a>
                 </li>
                 <li class="list-group-item">
                   <span>NYC1</span>
-                  <p>New York, USA</p>
+                  <p class="greytxt">New York, USA</p>
                   <a href="#">Test speed > </a>
                 </li>
               </ul>
@@ -336,8 +339,8 @@
 
       <!-- Development teams love -->
       <section class="grey">
-        <div class="container">
-          <h2>Development teams love DigitalOcean</h2>
+        <div class="container text-center">
+          <h2 class="bluetxt">Development teams love DigitalOcean</h2>
           <div id="carousel-example-generic grey" class="carousel slide" data-ride="carousel">
 
             <!-- Wrapper for slides -->
@@ -367,14 +370,12 @@
               <li data-target="#carousel-example-generic" data-slide-to="2"></li>
             </ol>
           </div>
-
         </div>
-
       </section>
 
       <!-- Get started now -->
       <section class="blue white">
-        <div class="container">
+        <div class="container text-center">
           <h2>Get started now.</h2>
           <button class="btn btn-default" type="submit">Create your account</button>
 
@@ -390,16 +391,50 @@
           </div>
           <div class="col-xs-12 col-md-6 col-lg-2">
             <h6>Company</h6>
+            <a class="greytxt" href="#">About</a>
+            <a class="greytxt" href="#">Leadership</a>
+            <a class="greytxt" href="#">Link</a>
+            <a class="greytxt" href="#">Blog</a>
+            <a class="greytxt" href="#">Careers</a>
+            <a class="greytxt" href="#">Partner Network</a>
+            <a class="greytxt" href="#">Referral Program</a>
+            <a class="greytxt" href="#">Events</a>
+            <a class="greytxt" href="#">Press</a>
+            <a class="greytxt" href="#">Legal & Security</a>
 
           </div>
           <div class="col-xs-12 col-md-6 col-lg-2">
-            <h6>Company</h6>
+            <h6>Products</h6>
+            <a class="greytxt" href="#">Droplets</a>
+            <a class="greytxt" href="#">Spaces</a>
+            <a class="greytxt" href="#">Kubernetes</a>
+            <a class="greytxt" href="#">Load Balancers</a>
+            <a class="greytxt" href="#">Block Storage</a>
+            <a class="greytxt" href="#">Tools & Integrations</a>
+            <a class="greytxt" href="#">One-Click Apps</a>
+            <a class="greytxt" href="#">API</a>
+            <a class="greytxt" href="#">Pricing</a>
+            <a class="greytxt" href="#">Documentation</a>
+            <a class="greytxt" href="#">Release Notes</a>
           </div>
           <div class="col-xs-12 col-md-6 col-lg-2">
-            <h6>Company</h6>
+            <h6>Community</h6>
+            <a class="greytxt" href="#">Tutorials</a>
+            <a class="greytxt" href="#">Meetups</a>
+            <a class="greytxt" href="#">Q&A</a>
+            <a class="greytxt" href="#">Write for Donations</a>
+            <a class="greytxt" href="#">Droplets for Demos</a>
+            <a class="greytxt" href="#">Hatch</a>
+            <a class="greytxt" href="#">Shop Swag</a>
+            <a class="greytxt" href="#">Research Program</a>
+            <a class="greytxt" href="#">Currents Research</a>
+            <a class="greytxt" href="#">Open Source</a>
           </div>
           <div class="col-xs-12 col-md-6 col-lg-2">
-            <h6>Company</h6>
+            <h6>Support</h6>
+            <a class="greytxt" href="#">Contact Support</a>
+            <a class="greytxt" href="#">FAQ</a>
+            <a class="greytxt" href="#">Network Status</a>
           </div>
         </div>
       </div>

@@ -4,37 +4,89 @@
 }
 
 section {
-  min-height: 100px;
+  padding: 30px 0;
 }
 
-.grey {
-  background-color: rgb(243, 245, 249);
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
 }
 
-.blue {
-  background: rgb(0,42,120);
-  background: linear-gradient(0deg, rgba(0,42,120,1) 0%, rgba(0,69,194,1) 100%);
+h6 {
+  font-size: 14px;
 }
 
-.white {
-  color: white;
+.littletxt {
+  font-size: 13px;
 }
+
+  /* Backgrounds */
+  .grey {
+    background-color: rgb(243, 245, 249);
+  }
+
+  .blue {
+    background: rgb(0,42,120);
+    background: linear-gradient(0deg, rgba(0,42,120,1) 0%, rgba(0,69,194,1) 100%);
+  }
+
+  /* Text color */
+  .white {
+    color: white;
+  }
+
+  .bluetxt {
+    color: rgb(3, 28, 78);
+  }
+
+  .greytxt {
+    color: lightgrey;
+  }
 
 /* Header */
+#header .navbar-header .navbar-brand img {
+  max-height: 100%;
+}
 
-  .navbar-brand > img {
-    max-width: 100%;
+  .navbar {
+    margin-bottom: 0;
   }
+  .navbar-default {
+    background-color: white;
+  }
+
+  .navbar-default .navbar-nav>li>a {
+    color: rgb(3, 28, 78);
+  }
+
+
 
 /* Jumbotron */
 #jumbo {
   background-image: url("../img/home.jpg");
+  padding: 70px;
 }
+
+  #jumbo .container {
+    padding: 0 30px;
+  }
+
+  #jumbo h1 {
+    font-size: 58px;
+  }
+
+  #jumbo .row div:first-child p {
+    font-size: 20px;
+  }
 
   #jumbo .row div:last-child {
     background-color: white;
     border-radius: 5px;
   }
+
+/* Partners */
+#partners h5 {
+  color: slategrey;
+}
 
 /* Deploy and scale */
 #deploy .row a {
@@ -62,6 +114,10 @@ section {
 
   .list-group-item p {
     display: inline-block;
+  }
+
+  .list-group-item a {
+    color: turquoise;
   }
 
 
