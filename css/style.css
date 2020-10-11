@@ -38,14 +38,34 @@ h6 {
     color: rgb(3, 28, 78);
   }
 
+  .lbluetxt {
+    color: rgb(36, 133, 253);
+  }
+
   .greytxt {
     color: lightgrey;
   }
 
 /* Header */
-#header .navbar-header .navbar-brand img {
-  max-height: 100%;
+#header {
+  font-weight: 500;
+  font-size: 14px;
 }
+
+  .navbar-header .navbar-brand {
+    padding: 10px;
+    margin-right: 90px;
+  }
+
+    @media all and (max-width: 1190px){
+      .navbar-header .navbar-brand {
+        margin-right: 0;
+      }
+    }
+
+  .navbar-header .navbar-brand img {
+    max-height: 100%;
+  }
 
   .navbar {
     margin-bottom: 0;
@@ -58,7 +78,10 @@ h6 {
     color: rgb(3, 28, 78);
   }
 
-
+  .navbar-default .btn.btn-default.lbluetxt {
+    border: 1px solid rgb(36, 133, 253);
+    margin-top: 9px;
+  }
 
 /* Jumbotron */
 #jumbo {
@@ -81,6 +104,20 @@ h6 {
   #jumbo .row div:last-child {
     background-color: white;
     border-radius: 5px;
+    padding: 15px;
+  }
+
+  #jumbo .btn.btn-primary.btn-lg.btn-block {
+    background-color: rgb(36, 133, 253);
+    border-color: rgb(36, 133, 253);
+  }
+
+  #jumbo .btn.btn-default.btn-lg.btn-block {
+    box-shadow: 1px 1px 2px 0px rgba(148,148,148,1);
+  }
+
+  #jumbo .form-control {
+    margin-bottom: 10px;
   }
 
 /* Partners */
@@ -100,6 +137,24 @@ h6 {
 #carousel-example-generic {
   background: linear-gradient(0deg, rgba(243, 245, 249, 1) 0%, rgba(243, 245, 249, 1) 100%);
 }
+
+  /* Carousel */
+  .carousel.slide .item {
+    padding: 0 150px;
+  }
+
+  .carousel.slide .item img {
+    margin: auto;
+  }
+
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+  }
+
+  .carousel-control {
+    color: rgb(3, 28, 78);
+    opacity: inherit;
+  }
 
 /* 12 Regions */
 .list-group-item {
@@ -124,4 +179,5 @@ h6 {
 /* Footer */
 footer {
   background-color: rgb(3, 28, 78);
+  padding: 40px;
 }
